@@ -1,0 +1,38 @@
+#!/bin/sh
+
+#  CydiaInstall.sh
+#  
+#
+#  Created by Dayton Hasty on 10/22/14.
+#
+clear
+read -p "Make sure your iDevice and Mac are on the same network. Please enter the IP address of your device: " ipwhu
+sleep 1
+clear
+echo "Creating Temporary Directory..."
+cd ~
+mkdir tmpcydia
+cd tmpcydia
+mkdir Cydia
+cd Cydia
+mkdir AutoInstall
+cd AutoInstall
+sleep 0.5
+echo "Downloading Cydia Packages..."
+wget 'http://apt.saurik.com/cydia/debs/cydia-lproj_1.1.12_iphoneos-arm.deb'
+wget 'http://apt.saurik.com/cydia/debs/cydia_1.1.13_iphoneos-arm.deb'
+clear
+echo "Transfering Cydia Packages to Device..."
+cd ~
+cd tmpcydia
+sleep 0.5
+echo "Please enter your SSH password when prompted [default is alpine]"
+sleep 2
+scp -rp Cydia root@$ipwhu:/private/var/root/Media
+sleep 1
+clear
+echo "Please manually reboot your device twice and Cydia will be installed."
+sleep 0.5
+cd ~
+rm -rf tmpcydia
+exit
