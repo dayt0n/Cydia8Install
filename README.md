@@ -8,4 +8,5 @@ An automatic Cydia Installer for iOS 8 incase you just somehow jailbroke your de
 Credits
 =======
 Dayt0n (Me)
+
 Saurik
