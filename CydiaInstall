@@ -28,6 +28,9 @@ cd tmpcydia
 sleep 0.5
 echo "Please enter your SSH password when prompted [default is alpine]"
 sleep 2
+ssh-keygen -R $ipwhu
+sleep 0.5
+clear
 scp -rp Cydia root@$ipwhu:/private/var/root/Media
 sleep 1
 clear
@@ -37,5 +40,5 @@ sleep 0.5
 cd ~
 rm -rf tmpcydia
 clear
-echo "Enjoy Cydia! *Warning: MobileSubstrate does not work with iOS 8.x so please be careful not to install much yet."
+echo "Enjoy Cydia! Just remember not to turn on the passcode or Find my iPhone
 exit
