@@ -36,5 +36,6 @@ ssh root@$ipwhu 'cd /private/var/root/Media/Cydia/AutoInstall; dpkg -i cydia-lpr
 sleep 0.5
 cd ~
 rm -rf tmpcydia
+clear
 echo "Enjoy Cydia! *Warning: MobileSubstrate does not work with iOS 8.x so please be careful not to install much yet."
 exit
