@@ -37,7 +37,7 @@ scp -rp Cydia root@$ipwhu:/private/var/root/Media
 sleep 1
 clear
 echo "Please enter your SSH password one last time."
-ssh root@$ipwhu 'cd private/var/root/Media/Cydia/AutoInstall; dpkg -i cydia-lproj_1.1.12_iphoneos-arm.deb cydia_1.1.13_iphoneos-arm.deb; cd /Applications; rm -rf pangu.app; sleep 4; reboot'
+ssh root@$ipwhu 'cd /private/var/root/Media/Cydia/AutoInstall; dpkg -i cydia-lproj_1.1.12_iphoneos-arm.deb cydia_1.1.13_iphoneos-arm.deb; cd /Applications; rm -rf pangu.app; sleep 4; reboot'
 sleep 0.5
 cd ~
 rm -rf tmpcydia
