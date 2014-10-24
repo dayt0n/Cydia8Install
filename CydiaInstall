@@ -26,11 +26,11 @@ echo "Transfering Cydia Packages to Device..."
 cd ~
 cd tmpcydia
 sleep 0.5
-echo "Please enter your SSH password when prompted [default is alpine]"
 sleep 2
 ssh-keygen -R $ipwhu
 sleep 0.5
 clear
+echo "Please enter your SSH password when prompted [default is alpine]"
 scp -rp Cydia root@$ipwhu:/private/var/root/Media
 sleep 1
 clear
@@ -40,5 +40,5 @@ sleep 0.5
 cd ~
 rm -rf tmpcydia
 clear
-echo "Enjoy Cydia! Just remember not to turn on the passcode or Find my iPhone
+echo "Enjoy Cydia! Just remember not to turn on the passcode or Find my iPhone EVER!"
 exit
