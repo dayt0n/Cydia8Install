@@ -22,7 +22,7 @@ sleep 0.5
 echo "Downloading Cydia Packages..."
 wget 'http://apt.saurik.com/cydia/debs/cydia-lproj_1.1.12_iphoneos-arm.deb'
 wget 'http://apt.saurik.com/cydia/debs/cydia_1.1.13_iphoneos-arm.deb'
-wget 'http://apt.saurik.com/cydia/debs/mobilesubstrate_0.9.5013_iphoneos-arm.deb'
+wget 'http://apt.saurik.com/cydia/debs/mobilesubstrate_0.9.5015_iphoneos-arm.deb'
 wget 'http://apt.saurik.com/cydia/debs/com.saurik.substrate.safemode_0.9.4000_iphoneos-arm.deb'
 wget 'http://apt.saurik.com/cydia/debs/com.saurik.afc2d_1.1_iphoneos-arm.deb'
 clear
